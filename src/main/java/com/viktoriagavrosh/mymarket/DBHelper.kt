@@ -31,4 +31,11 @@ class DBHelper(
 
         db.close()
     }
+
+    fun getUser(login: String, pass: String): Boolean {
+        val db = this.readableDatabase
+
+        val result = db.rawQuery("SELECT * FROM users WHERE login = '$login' AND pass = '$pass'", null)
+        return result.moveToFirst()
+    }
 }

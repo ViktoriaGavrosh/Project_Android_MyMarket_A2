@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary95"
     android:orientation="vertical"
-    android:background="#201E28"
-    tools:context=".MainActivity">
+    tools:context=".AuthActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/actor"
         android:layout_gravity="center"
         android:layout_marginTop="170dp"
-        android:text="Создайте аккаунт"
+        android:fontFamily="@font/actor"
+        android:text="Вход в аккаунт"
         android:textColor="@android:color/holo_purple"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/user_login"
+        android:id="@+id/user_login_auth"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -32,19 +32,7 @@
         android:textColorHint="@color/material_dynamic_tertiary60" />
 
     <EditText
-        android:id="@+id/user_email"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="Введите email"
-        android:textColor="@android:color/holo_purple"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:inputType="textEmailAddress"
-        android:textColorHint="@color/material_dynamic_tertiary60"  />
-
-    <EditText
-        android:id="@+id/user_pass"
+        android:id="@+id/user_pass_auth"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -56,27 +44,26 @@
         android:textColorHint="@color/material_dynamic_tertiary60" />
 
     <Button
-        android:id="@+id/button_reg"
+        android:id="@+id/button_auth"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:backgroundTint="@android:color/holo_purple"
-        android:text="Регистрация"
+        android:text="Войти"
         android:textColor="@color/material_dynamic_tertiary80"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/link_to_auth"
+        android:id="@+id/link_to_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:fontFamily="@font/inika_bold"
-        android:text="Войти"
+        android:text="Зарегистироваться"
         android:textColor="@android:color/holo_purple"
         android:textSize="17dp" />
-
 
 </LinearLayout>
